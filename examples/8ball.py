@@ -1,7 +1,7 @@
 import microbit
 
 TOLERANCE = 3000
-MESSAGES = ["It is certain", "Dont count on it", "Ask again later", "Ask again"]
+MESSAGES = ["It is certain", "Dont count on it", "Ask again"]
 
 def get_accel_total():
     x = microbit.accelerometer.get_x()
