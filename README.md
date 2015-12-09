@@ -11,3 +11,9 @@ The programs were created using [upyed](https://github.com/ntoll/upyed) the 'web
 In the examples directory you will find the .py program files.
 * ledclass.py - using a class to control a single LED
 * snakebit.py - a port of the classic game Snake 
+* 8ball.py - a magic 8 ball 
+* mcfly - an xwing in Minecraft controlled using the microbit
+  * microbitreaddata.py - program to read data from microbit
+  * myfly.py - a program which creates an xwing in Minecraft and allows the user to control it by tilting the Microbit and pressing the buttons
+
+
