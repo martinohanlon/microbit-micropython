@@ -1,4 +1,8 @@
 from microbit import *
+import music
+
+# The theme tune to a certain film franchise. Connect a speaker to pin0 and GND. The force is strong with this... ;-)
+tune = ('c4:6', 'g:3', 'f:1', 'e', 'd', 'c5:6', 'g4:3', 'f:1', 'e', 'd', 'c5:6', 'g4:3', 'f:1', 'e', 'f', 'd:6', 'r:6')
 
 REFRESH = 500
 
@@ -13,4 +17,7 @@ def run():
 		get_data()
 
 display.show('M')
+# Play the theme tune, don't block and keep looping. Gets quite annoying after a while... ;-)
+music.play(theme, wait=False, loop=True)
 run()
+music.stop()
