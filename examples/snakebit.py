@@ -1,4 +1,5 @@
-import microbit
+import microbit
+import random
 
 class SnakeBit():
     UP = 0
@@ -62,8 +63,8 @@ class SnakeBit():
         badApple = True
         #try and fnd a location for the apple
         while(badApple):
-            x = microbit.random(5)
-            y = microbit.random(5)
+            x = random.randint(0,4)
+            y = random.randint(0,4)
             badApple = self.checkCollision(x, y)
         self.apple = [x, y]
         microbit.display.set_pixel(x, y, self.APPLEBRIGHTNESS)
