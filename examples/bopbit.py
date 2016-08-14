@@ -1,4 +1,5 @@
 from microbit import *
+import random
 
 #constants
 # the speed is based on level, the higher the level, the faster the speed
@@ -58,7 +59,7 @@ while gameover == False:
     success = False
     
     #randomly pick an A or B button
-    action = random(2)
+    action = random.randint(0, 1)
     
     #wait for the button to be pressed
     if action == 0:
